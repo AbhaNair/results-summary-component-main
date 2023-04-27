@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Hanken G";
+  src: url("assets/fonts/hanken.ttf");
+}
+
+body {
+  font-family: "Hanken G";
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center; /*what does this do???*/
+  background-color: rgb(238, 235, 235);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 40px;
+  width: 600px;
+}
+
+.score-section {
+  text-align: center;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 40px;
+  color: white;
+  padding: 50px;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.summary-section {
+  padding: 50px 35px;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary-section h4 {
+  font-size: 18px;
+}
+
+.score-section h4 {
+  font-size: 18px;
+  color: lightgrey;
+}
+
+.score-section div {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 54px;
+  font-weight: 900;
+}
+
+.score-section div span {
+  font-size: 15px;
+  font-weight: 500;
+  color: lightgrey;
+}
+
+.score-section span {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.score-section .content {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: lightgrey;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.category {
+  display: flex;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 10px;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+#reaction {
+  background-color: hsla(0, 100%, 67%, 10%);
+  color: hsl(0, 100%, 67%);
+}
+
+#memory {
+  background-color: hsla(39, 100%, 56%, 10%);
+  color: hsl(39, 100%, 56%);
+}
+
+#verbal {
+  background-color: hsla(166, 100%, 37%, 10%);
+  color: hsl(166, 100%, 37%);
+}
+
+#visual {
+  background-color: hsl(234, 85%, 45%, 10%);
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: hsl(241, 81%, 54%);
+}
+
+.category div {
+  display: flex;
+  align-items: center;
+}
+
+.category div img {
+  padding-right: 5px;
+}
+
+.score {
+  color: rgb(161, 159, 159);
+  display: flex;
+  gap: 7px;
+}
+
+.score span {
+  color: black;
+}
